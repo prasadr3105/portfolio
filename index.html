@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="manifest" href="/manifest.json">
+    <!--<link rel="stylesheet" href="/Portfolio.css">-->
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6ff; /* Light purple background */
+    color: #2c003e; /* Dark purple text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: burlywood; /* Coral red */
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 5px solid rgb(28, 120, 125); /* Orange accent */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: black (255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: black; /* Coral red for headings */
+    border-bottom: 2px solid #ff9f43; /* Orange underline */
+    padding-bottom: 0.5rem;
+}
+
+.project-container, .skill-container, .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-card, .skill-card, .experience-card {
+    background-color: #e6ccff; /* Light lavender */
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover, .skill-card:hover, .experience-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img, .experience-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact {
+    background-color: #6b48ff; /* Deep blue-purple */
+    color: #fff;
+    text-align: center;
+}
+
+.contact a {
+    color: #ff9f43; /* Orange links */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .project-card, .experience-card {
+        width: 100%;
+    }
+    .skill-card {
+        width: 45%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <section class="intro">
+        <h2>About Me</h2>
+        <p>Hi, I'm Prasad Reddy</p>
+        <p>A passionate web developer who loves building responsive, user-friendly websites and applications. I specialize in front-end development and enjoy creating interactive digital experiences.</p>
+    </section>
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A fully responsive site showcasing my skills and projects, built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <h3>ToDo List App</h3>
+                <p>A React-based task manager with add, edit, and delete functionality.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>A JavaScript app fetching real-time weather data via OpenWeatherMap API.</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill-card">HTML5, CSS3, JavaScript (ES6+)</div>
+            <div class="skill-card">React, Node.js, Bootstrap</div>
+            <div class="skill-card">Git, GitHub, VS Code, Chrome DevTools</div>
+            <div class="skill-card">Responsive Design, PWAs, API Integration</div>
+        </div>
+    </section>
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>Web Development Intern</h3>
+                <p>Tech Solutions | Jun 2023 - Aug 2023</p>
+                <p>Developed responsive web pages and collaborated on team projects using React and CSS.</p>
+            </div>
+            <div class="experience-card">
+                <h3>Freelance Web Developer</h3>
+                <p>Self-Employed | Jan 2024 - Present</p>
+                <p>Designed and deployed custom websites for clients, focusing on UI/UX and performance.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>I'm open to collaboration, freelance opportunities, or just a chat! Reach out below:</p>
+        <p>Email: <a href="mailto:prasadreddy079@gmail.com">prasadreddy079@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/PrasadReddy">linkedin.com/in/PrasadReddy</a></p>
+        <p>GitHub: <a href="https://github.com/prasad-31">github.com/prasad-31</a></p>
+    </section>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(reg => console.log('Service Worker registered:', reg.scope))
+                    .catch(err => console.log('Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>
