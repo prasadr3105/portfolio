@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6ff; /* Light purple background */
+    color: #2c003e; /* Dark purple text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: burlywood; /* Coral red */
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 5px solid rgb(28, 120, 125); /* Orange accent */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: black (255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: black; /* Coral red for headings */
+    border-bottom: 2px solid #ff9f43; /* Orange underline */
+    padding-bottom: 0.5rem;
+}
+
+.project-container, .skill-container, .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-card, .skill-card, .experience-card {
+    background-color: #e6ccff; /* Light lavender */
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover, .skill-card:hover, .experience-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img, .experience-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.skill-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact {
+    background-color: #6b48ff; /* Deep blue-purple */
+    color: #fff;
+    text-align: center;
+}
+
+.contact a {
+    color: #ff9f43; /* Orange links */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .project-card, .experience-card {
+        width: 100%;
+    }
+    .skill-card {
+        width: 45%;
+    }
+}

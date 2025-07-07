@@ -1,0 +1,21 @@
+﻿{
+  "name": "Prasad Reddy Portfolio",
+  "short_name": "Prasad Portfolio",
+  "description": "Personal portfolio showcasing web development projects and skills",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f0e6ff",
+  "theme_color": "#6b48ff",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
